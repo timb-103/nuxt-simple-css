@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-simple-css",
+  "version": "1.0.0",
+  "description": "Add Simple CSS to your Nuxt project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timb-103/nuxt-simple-css.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "npm run prepack && changelogen --release && npm publish && git push --follow-tags"
+  },
+  "dependencies": {
+    "@nuxt/kit": "3.6.5",
+    "defu": "6.1.2",
+    "simpledotcss": "^2.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "0.4.0",
+    "@nuxt/schema": "3.6.5",
+    "@types/node": "18.17.0",
+    "changelogen": "0.5.4",
+    "nuxt": "3.6.5"
+  }
+}
