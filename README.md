@@ -51,6 +51,10 @@ export default defineNuxtConfig({
 | `marked`       | `string` | `#ffdd33` |
 | `disabled`     | `string` | `#efefef` |
 
+### Live examples
+
+- [https://thumbnail.video](https://thumbnail.video)
+
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-simple-css/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
