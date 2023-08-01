@@ -28,6 +28,10 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt Simple CSS in your Nuxt app ✨
 
+## Usage
+
+You don't have to do anything to use simple CSS as it will add styles to make your project look good automatically however simple CSS has a bunch of simple classes that can help extend it a bit further. To learn more about simple.css, read the [documentation here](https://simplecss.org).
+
 ## Options
 
 ```js
